@@ -53,7 +53,7 @@ use self::fmt::Debug;
 #[cfg(feature = "alloc")]
 extern crate alloc;
 #[cfg(feature = "alloc")]
-use alloc::Vec;
+use alloc::vec::Vec;
 
 #[macro_use]
 extern crate serde;
@@ -254,7 +254,7 @@ mod bytebuf {
     use self::fmt::Debug;
 
     #[cfg(feature = "alloc")]
-    use alloc::{String, Vec};
+    use alloc::{string::String, vec::Vec};
 
     use serde::de::{Deserialize, Deserializer, Error, SeqAccess, Visitor};
     use serde::ser::{Serialize, Serializer};
